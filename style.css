@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- CSS HERE --- */
+
+@font-face {
+    font-family: Naruto;
+    src: url(./fonts/njnaruto.ttf);
+}
+
+:root {
+    --red: #b81f2c;
+    ---dark-red: #ac154d;
+    --black: #1c171e;
+    --white: #ffebb8;
+    --blue: #a79ad6;
+    --black-opaque: #1c171ece;
+    --white-opaque: #ffebb8ad;
+    --table-radius: 1rem 1rem 0rem 0rem;
+}
+
+html {
+    background: url("./img/background.jpg");
+    background-size: 1920px;
+    color: var(--white);
+    font-family: Naruto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 1.5ch;
+}
+
+a {
+    background-color: var(--black);
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+a:link {
+    color: var(--blue);
+}
+
+a:visited {
+    color: var(---blue);
+    background-color: transparent;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+
+#title {
+    color: var(--white);
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.content-grid p {
+    grid-column: span 3;
+    padding: 1rem;
+    text-align: center;
+}
+
+.round-img {
+    border: 2px solid var(--red);
+    border-radius: 3rem;
+    width: 300px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--red);
+    font-size: 2.5rem;
+    text-decoration: underline;
+    grid-column: span 2;
+    align-self: center;
+    text-align: center;
+    background-color: var(--black-opaque);
+    padding: 1rem;
+    border-radius: 1rem;
+    line-height: 4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    background-color: var(--black-opaque);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+ul, ol {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.nature-types-learnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ol {
+    background-color: var(--black-opaque);
+    border-radius: 1rem;
+    padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+    line-height: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    line-height: 3rem;
+}
+
+.shuriken-list {
+    display: flex;
+    justify-content: center;
+}
+
+.shuriken {
+    background: url("./img/shuriken.svg") no-repeat;
+    background-position: left;
+    animation: spin 1.3s infinite;
+    margin: none;
+}
+
+@keyframes spin {
+    0% { rotate: 0deg;}
+    10% { rotate: 36deg;}
+    20% { rotate: 72deg;}
+    30% { rotate: 108deg;}
+    40% { rotate: 144deg;}
+    50% { rotate: 180deg;}
+    60% { rotate: 216deg;}
+    70% { rotate: 252deg;}
+    80% { rotate: 288deg;}
+    90% { rotate: 324deg;}
+    100% { rotate: 360deg;}
+}
+
+
+.itachi-stats {
+    display: flex;
+    align-self: center;
+}
+
+.itachi-stats,
+.akatsuki-members {
+    color: var(--black);
+    width: 100%;
+    background-color: var(--white-opaque);
+    border-radius: var(--table-radius);
+    padding: 1rem;
+    margin-left: 2vw;
+}
+
+.itachi-stats th,
+.akatsuki-members th {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+td {
+    text-align: center;
+    border-bottom: 2px solid var(---dark-red);
+    border-right: 2px solid var(---dark-red);
+    line-height: 2.2rem;
+}
+
+.itachi-stats td:last-child {
+    border-right: none;
+}
+
+.akatsuki-members {
+    grid-column: span 3;
+    width: 95vw;
+    margin-bottom: 1rem
+}
+
+.akatsuki-members th {
+    font-size: 1.8rem;
+}
+
+.akatsuki-members td:last-child {
+    border-right: none;
+}
+
+.akatsuki-members a {
+    background-color: var(--white-opaque);
+}
+
+.akatsuki-members a:link {
+    background-color: var(--black-opaque);
+}
+
+.akatsuki-members a:visited {
+    color: var(--black);
+}
+
+.back {
+    background: var(--white-opaque);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+.back:link {
+    color: var(--black);
+}
+
+.back:visited {
+    color: var(--black);
+}
+
+.chibi {
+    width: 300px;
+    position: fixed;
+    top: 1rem;
+    left: 27rem;
+    animation: appear 8s infinite;
+}
+
+@keyframes appear {
+    0% { opacity: 100%;}
+    3% { opacity: 90%;}
+    6% { opacity: 80%;}
+    9% { opacity: 70%;}
+    12% { opacity: 60%;}
+    15% { opacity: 50%;}
+    18% { opacity: 40%;}
+    21% { opacity: 30%;}
+    24% { opacity: 20%;}
+    27% { opacity: 10%;}
+    30% { opacity: 0%;}
+    55% { opacity: 0%;}
+    60% { opacity: 0%;}
+    65% { opacity: 0%;}
+    70% { opacity: 0%;}
+    73% { opacity: 10%;}
+    76% { opacity: 20%;}
+    79% { opacity: 30%;}
+    82% { opacity: 40%;}
+    85% { opacity: 50%;}
+    88% { opacity: 60%;}
+    91% { opacity: 70%;}
+    94% { opacity: 80%;}
+    97% { opacity: 90%;}
+    100% { opacity: 100%;}
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.footer a {
+    color: white;
+    background-color: black;
+}
+
+.footer a :link{
+    color: blue;
+    background-color: black;
+}
+
+.footer a:visited {
+    color: purple;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1280px) {
+    
+}
