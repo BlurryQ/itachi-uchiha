@@ -199,6 +199,10 @@ ul li {
     align-self: center;
 }
 
+.table-column {
+    display: none;
+}
+
 .itachi-stats,
 .akatsuki-members {
     color: var(--black);
@@ -331,6 +335,39 @@ td {
     background-color: black;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1080px) {
     
+    .round-img {
+        width: 200px;
+    }
+
+    .kekkai-genkai ul {
+        background-color: var(--black-opaque);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    li {
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        line-height: 2.5rem;
+    }
+
+    .table-column {
+        display: block;
+    }
+
+    .table-row {
+        display: none;
+    }
+
+    .akatsuki-members th {
+        line-height: 2.5rem;
+    }
+
+    .chibi {
+        left: 3rem
+    }
 }
