@@ -2,7 +2,7 @@
 
 ## Summary
 
-I created a webpage dedicated to [Itachi Uchiha] (https://naruto.fandom.com/wiki/Itachi_Uchiha?so=search), a complex and honorable character from Naruto, as a practice project to refine my HTML and CSS skills.
+I created a webpage dedicated to [Itachi Uchiha](https://naruto.fandom.com/wiki/Itachi_Uchiha?so=search), a complex and honorable character from Naruto, as a practice project to refine my HTML and CSS skills.
 
 - Built with vanilla HTML, CSS, and JavaScript for a lightweight and responsive experience
 - Custom animations using keyframes
