@@ -1,8 +1,10 @@
 # Itachi Uchiha
 
+![Itachi Uchiha Screenshot](./img/demo.png)
+
 ## Summary
 
-![Itachi Uchiha Screenshot](./img/demo.png)
+**Hosted:** [itachi-uchiha](https://blurryq.github.io/itachi-uchiha)
 
 I created a webpage dedicated to [Itachi Uchiha](https://naruto.fandom.com/wiki/Itachi_Uchiha?so=search), a complex and honorable character from Naruto, as a practice project to refine my HTML and CSS skills.
 
