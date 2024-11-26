@@ -1,6 +1,6 @@
 # Itachi Uchiha
 
-![Itachi Uchiha Screenshot](./img/demo.png)
+![Itachi Uchiha Screenshot](./img/demo.gif)
 
 ## Summary
 
